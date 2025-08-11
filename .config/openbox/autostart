@@ -4,4 +4,8 @@ tint2 &
 
 conky &
 
-nitrogen --set-auto /usr/local/share/backgrounds/wallpaper.png
+nitrogen --set-auto /usr/local/share/backgrounds/wallpaper.png &
+
+pulseaudio --start &
+
+pasystray &
