@@ -1,5 +1,9 @@
 pulseaudio --start &
 
+picom &
+
+cairo-dock -c &
+
 ~/.config/polybar/launch.sh &
 
 ~/.config/conky/conky.sh &
