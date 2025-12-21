@@ -1,0 +1,5 @@
+pulseaudio --start &
+
+~/.config/polybar/launch.sh &
+
+~/.config/conky/conky.sh &
