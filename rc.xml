@@ -68,6 +68,45 @@
                                 <action name="ShowMenu">
                                         <menu>client-menu</menu>
                                 </action>
+			</mousebind>
+			<mousebind button="Left" action="Click">
+				<action name="Iconify" />
+			</mousebind>
+		</context>
+		<context name="Frame">
+			<mousebind button="W-Left" action="Drag">
+				<action name="Move"/>
+			</mousebind>
+			<mousebind button="W-Right" action="Drag">
+				<action name="Resize" />
+			</mousebind>
+		</context>
+		<context name="Top">
+                        <mousebind button="Left" action="Drag">
+                                <action name="Resize">
+                                        <edge>top</edge>
+                                </action>
+                        </mousebind>
+                </context>
+		<context name="Left">
+                        <mousebind button="Left" action="Drag">
+                                <action name="Resize">
+                                        <edge>left</edge>
+                                </action>
+                        </mousebind>
+		</context>
+		<context name="Right">
+                        <mousebind button="Left" action="Drag">
+                                <action name="Resize">
+                                        <edge>right</edge>
+                                </action>
+                        </mousebind>
+		</context>
+		<context name="Bottom">
+                        <mousebind button="Left" action="Drag">
+                                <action name="Resize">
+                                        <edge>bottom</edge>
+                                </action>
                         </mousebind>
                 </context>
 	</mouse>
