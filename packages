@@ -25,3 +25,6 @@ lightdm-webkit2-greeter
 picom
 tlp
 smartmontools
+xdg-utils
+pcmanfm
+obconf-qt
