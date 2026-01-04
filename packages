@@ -27,4 +27,5 @@ tlp
 smartmontools
 xdg-utils
 pcmanfm
-obconf-qt
+mesa
+mesa-utils
