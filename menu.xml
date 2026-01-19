@@ -25,7 +25,7 @@
         </item>
         <item label="Refresh">
             <action name="Execute">
-                <command></command>
+                <command>openbox --reconfigure</command>
             </action>
         </item>
         <separator />
