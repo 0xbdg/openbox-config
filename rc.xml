@@ -225,6 +225,10 @@
       <action name="Execute">
         <command>rofi -show windowcd -show-icons</command>
       </action>
+        </keybind>
+    <!-- other -->
+    <keybind key="F23">
+        <action name="Execute">firefox</action>
     </keybind>
   </keyboard>
   <menu>
