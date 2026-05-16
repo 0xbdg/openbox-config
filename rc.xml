@@ -13,6 +13,8 @@
   <placement>
     <center>yes</center>
     <policy>Smart</policy>
+    <monitor>Any</monitor>
+    <primaryMonitor></primaryMonitor>
   </placement>
   <!-- Resize -->
   <resize>
@@ -74,46 +76,64 @@
     <context name="Titlebar">
       <mousebind button="Left" action="Click">
         <action name="Focus"/>
-	    <action name="Raise"/>
+        <action name="Raise"/>
       </mousebind>
       <mousebind button="Left" action="Drag">
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
         <action name="ToggleMaximize"/>
+        <action name="MoveResizeTo">
+          <x>center</x>
+          <y>center</y>
+          <width>1300</width>
+          <height>900</height>
+        </action>
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>
       </mousebind>
       <mousebind button="Middle" action="Click">
-        <action name="Iconify" />
-      </mousebind> 
+        <action name="Iconify"/>
+      </mousebind>
     </context>
     <context name="Frame">
       <mousebind button="A-Up" action="Click">
-        <action name="GoToDesktop"><to>previous</to></action>
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
       </mousebind>
       <mousebind button="A-Down" action="Click">
-        <action name="GoToDesktop"><to>next</to></action>
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
       </mousebind>
       <mousebind button="C-A-Up" action="Click">
-        <action name="GoToDesktop"><to>previous</to></action>
+        <action name="GoToDesktop">
+          <to>previous</to>
+        </action>
       </mousebind>
       <mousebind button="C-A-Down" action="Click">
-        <action name="GoToDesktop"><to>next</to></action>
+        <action name="GoToDesktop">
+          <to>next</to>
+        </action>
       </mousebind>
       <mousebind button="A-S-Up" action="Click">
-        <action name="SendToDesktop"><to>previous</to></action>
+        <action name="SendToDesktop">
+          <to>previous</to>
+        </action>
       </mousebind>
       <mousebind button="A-S-Down" action="Click">
-        <action name="SendToDesktop"><to>next</to></action>
+        <action name="SendToDesktop">
+          <to>next</to>
+        </action>
       </mousebind>
     </context>
     <context name="Client">
-        <mousebind button="Left" action="Press">
-            <action name="Focus"/>
-            <action name="Raise"/>
-        </mousebind>
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
     </context>
     <context name="Top">
       <mousebind button="Left" action="Drag">
@@ -247,10 +267,10 @@
       <action name="Execute">
         <command>rofi -show windowcd -show-icons</command>
       </action>
-        </keybind>
+    </keybind>
     <!-- other -->
     <keybind key="F23">
-        <action name="Execute">firefox</action>
+      <action name="Execute">firefox</action>
     </keybind>
   </keyboard>
   <!-- Menu -->
@@ -316,6 +336,12 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <popupTime>1000</popupTime>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+    </names>
   </desktops>
   <!-- Dock -->
   <dock>
