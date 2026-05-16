@@ -33,7 +33,7 @@
   </margins>
   <!-- Mouse -->
   <mouse>
-    <dragThreshold>8</dragThreshold>
+    <dragThreshold>1</dragThreshold>
     <doubleClickTime>200</doubleClickTime>
     <screenEdgeWarpTime>400</screenEdgeWarpTime>
     <context name="Root">
@@ -90,11 +90,23 @@
       </mousebind> 
     </context>
     <context name="Frame">
-      <mousebind button="W-Left" action="Drag">
-        <action name="Move"/>
+      <mousebind button="A-Up" action="Click">
+        <action name="GoToDesktop"><to>previous</to></action>
       </mousebind>
-      <mousebind button="W-Right" action="Drag">
-        <action name="Resize"/>
+      <mousebind button="A-Down" action="Click">
+        <action name="GoToDesktop"><to>next</to></action>
+      </mousebind>
+      <mousebind button="C-A-Up" action="Click">
+        <action name="GoToDesktop"><to>previous</to></action>
+      </mousebind>
+      <mousebind button="C-A-Down" action="Click">
+        <action name="GoToDesktop"><to>next</to></action>
+      </mousebind>
+      <mousebind button="A-S-Up" action="Click">
+        <action name="SendToDesktop"><to>previous</to></action>
+      </mousebind>
+      <mousebind button="A-S-Down" action="Click">
+        <action name="SendToDesktop"><to>next</to></action>
       </mousebind>
     </context>
     <context name="Client">
