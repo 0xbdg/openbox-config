@@ -14,7 +14,7 @@
     <center>yes</center>
     <policy>Smart</policy>
     <monitor>Any</monitor>
-    <primaryMonitor></primaryMonitor>
+    <primaryMonitor/>
   </placement>
   <!-- Resize -->
   <resize>
